@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Walter</title>
-  <meta name="description" content="Walter's privacy policy. Everything stays on your device. No accounts, no analytics, no data collection.">
+  <meta name="description" content="Privacy policy and account-deletion instructions for the Walter Android app.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,57 +26,90 @@
       <p class="date">Effective July 18, 2026 · Applies to the Walter app for Android (package <code>app.walter.vault</code>)</p>
 
       <p>
-        The short version: <strong>everything you put into Walter stays on your phone.</strong>
-        Walter has no accounts, no servers, no analytics and no ads. We do not collect,
-        transmit, sell or share any personal data, because the app never sends your
-        data anywhere.
+        This policy explains how Walter collects, uses, stores and deletes information.
+        Walter uses online accounts and cloud sync so your profile and vault data can be
+        available across sessions and devices. We do not sell your personal information
+        or use it for advertising.
       </p>
 
-      <h2>What the app stores, and where</h2>
-      <p>Walter keeps the following information in local storage on your device only:</p>
+      <h2>Information we collect</h2>
       <ul>
-        <li>Your display name, wage or salary figure, and preferences you set in Settings</li>
-        <li>The impulses you lock up: item names, prices, categories, reasons and timers</li>
-        <li>Your savings totals, levels and achievements, which are computed from the above</li>
-        <li>A profile photo, if you choose one from your gallery. The image is copied into the app's private storage and never leaves your device</li>
+        <li><strong>Account information</strong>: your email address, authentication provider, account identifier and sign-in information needed to provide your account. If you sign in with Google, Google provides Walter with basic account information such as your email address and profile details. Walter also supports email-and-password accounts.</li>
+        <li><strong>Profile and settings</strong>: information you choose to provide, such as your display name, wage or salary figure, profile photo, preferences and analytics choice.</li>
+        <li><strong>Vault data</strong>: the impulses you save, including item names, prices, categories, reasons, timers, outcomes, savings totals, levels and achievements.</li>
+        <li><strong>Limited analytics data</strong>: privacy-minimized product-usage events and technical information used to understand app reliability and feature use. Walter does not enable PostHog session replay, autocapture or GeoIP enrichment.</li>
       </ul>
-      <p>None of this is uploaded. If you are offline, Walter works exactly the same.</p>
 
-      <h2>What we do not do</h2>
+      <h2>How we use information</h2>
       <ul>
-        <li>No user accounts and no sign-in</li>
-        <li>No analytics, tracking or advertising SDKs</li>
-        <li>No sharing or selling of data to third parties</li>
-        <li>No network transmission of your personal data</li>
+        <li>To create and secure your account through Google OAuth or email and password</li>
+        <li>To provide the app, sync your profile and vault data, restore your data and calculate app features such as savings and achievements</li>
+        <li>To maintain, troubleshoot and improve Walter using limited analytics when you have not opted out</li>
+        <li>To respond to support, privacy and account-deletion requests</li>
       </ul>
+
+      <h2>Services that process data</h2>
+      <p>
+        Walter uses <strong>Supabase</strong> for authentication and cloud storage of account,
+        profile and vault data. Walter uses <strong>PostHog</strong> for privacy-minimized
+        analytics. These service providers process data on our behalf to provide their
+        services. Data may be processed in countries other than your own and is subject
+        to the providers' security and privacy safeguards.
+      </p>
+
+      <h2>Analytics controls</h2>
+      <p>
+        You can opt out of PostHog analytics at any time in
+        <strong>Settings → Privacy &amp; analytics</strong>. Session replay, autocapture and
+        GeoIP enrichment are disabled for Walter. PostHog is not used for advertising.
+      </p>
 
       <h2>Permissions the app uses</h2>
       <ul>
         <li><strong>Notifications</strong>: to remind you locally when a vault timer opens. Reminders are scheduled on your device.</li>
         <li><strong>Vibration</strong>: for haptic feedback on taps.</li>
-        <li><strong>Photo library (optional)</strong>: only if you choose to set a profile photo. Walter reads the single image you pick and nothing else.</li>
+        <li><strong>Photo library (optional)</strong>: only if you choose to set a profile photo. Walter accesses the image you select.</li>
       </ul>
 
-      <h2>Your data, your controls</h2>
+      <h2 id="account-deletion">Account and data deletion</h2>
+      <p>You can delete your Walter account and its associated data in either of these ways:</p>
       <ul>
-        <li><strong>Export</strong>: you can export your full history as a CSV file from the Profile screen. The file is saved where you choose; nothing is sent to us.</li>
-        <li><strong>Delete</strong>: "Erase local data" in the app permanently removes your profile, preferences and vault history from the device. Uninstalling the app does the same.</li>
+        <li><strong>In the app</strong>: go to <strong>Settings → Privacy &amp; analytics → Delete account &amp; data</strong> and confirm deletion.</li>
+        <li><strong>Outside the app</strong>: email <a href="mailto:nokolabs.dev@gmail.com?subject=Walter%20account%20deletion%20request">nokolabs.dev@gmail.com</a> from the address associated with your Walter account and request account deletion. We may ask you to verify that you control the account.</li>
       </ul>
+      <p>
+        Deletion removes your Walter account and associated profile and vault data from
+        active Supabase systems. Limited records may remain temporarily in encrypted
+        backups or where retention is required for security, fraud prevention or legal
+        compliance, and are removed or anonymized according to applicable retention
+        schedules. Analytics information already aggregated or de-identified may not be
+        linkable to your account and may be retained.
+      </p>
+
+      <h2>Data retention and security</h2>
+      <p>
+        We keep account, profile and vault data while your account is active and until it
+        is deleted, subject to the limited exceptions described above. We use reasonable
+        technical and organizational safeguards, but no method of electronic storage or
+        transmission is completely secure.
+      </p>
 
       <h2>Children</h2>
-      <p>Walter is not directed at children under 13 and does not knowingly collect information from anyone, children included, because it does not collect information at all.</p>
+      <p>Walter is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided information, contact us so we can delete it.</p>
 
       <h2>Changes to this policy</h2>
-      <p>If a future version of Walter ever changes how data is handled, for example an optional backup feature, this policy will be updated first and the change will be called out in the app update notes.</p>
+      <p>We may update this policy as Walter or applicable requirements change. We will post the revised policy here and update the effective date above.</p>
 
       <h2>Contact</h2>
-      <p>Questions about privacy? Email <a href="mailto:winndin@gmail.com">winndin@gmail.com</a>.</p>
+      <p>For privacy questions or account-and-data deletion requests, email <a href="mailto:nokolabs.dev@gmail.com">nokolabs.dev@gmail.com</a>.</p>
     </article>
 
     <footer class="site">
       <a href="index.html">walter</a>
       <span class="sep">·</span>
-      <a href="mailto:winndin@gmail.com">Contact</a>
+      <a href="#account-deletion">Delete account &amp; data</a>
+      <span class="sep">·</span>
+      <a href="mailto:nokolabs.dev@gmail.com">Contact</a>
     </footer>
   </div>
 </body>
